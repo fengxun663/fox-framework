@@ -1,0 +1,73 @@
+.fox-wrap {
+    font-family: Arial, sans-serif;
+}
+
+/* 顶部标题 */
+.fox-header {
+    height: 100px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 主体容器 */
+.fox-main-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* 左侧菜单 */
+.fox-sidebar {
+    width: 200px;
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+.fox-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fox-sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fox-sidebar li:hover,
+.fox-sidebar li.active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* 右侧内容 */
+.fox-content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-left: 10px; /* 左右间隔 */
+}
+
+/* 选项字段 */
+.fox-field {
+    margin-bottom: 20px;
+}
+
+.fox-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fox-field input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}

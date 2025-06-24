@@ -1,0 +1,13 @@
+.fox-icon-picker-container {
+    margin-top: 10px;
+}
+
+.fox-icon {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fox-icon:hover {
+    background-color: #f0f0f0;
+}

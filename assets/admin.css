@@ -1,0 +1,588 @@
+.fox-wrap {
+    font-family: Arial, sans-serif;
+		
+	margin: 0 20px 0 0;
+}
+
+/* 顶部标题 */
+.fox-header {
+    height: 60px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+	margin: 20px 0 0 0;
+
+}
+
+.fox-header h3{
+    width: auto;
+    padding: 6px;
+}
+
+.fox-header span{
+    font-size: 11px;
+    margin-left: 20px;
+    color: burlywood;
+}
+
+.fox-header h3{
+	color:#fff;
+}
+
+/* 主体容器 */
+.fox-main-container {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+/* 左侧菜单 */
+.fox-sidebar {
+    width: 200px;
+    background: #f0f0f0;
+    padding: 10px;
+
+}
+
+/* 左侧菜单图标样式 */
+.fox-sidebar .dashicons {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.fox-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fox-sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fox-sidebar li:hover,
+.fox-sidebar li.active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* 右侧内容 */
+.fox-content {
+    flex: 1;
+    padding: 5px 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-left: 10px; /* 左右间隔 */
+}
+
+/* 选项字段 */
+.fox-field {
+    margin-bottom: 20px;
+	padding:0 0 10px 0;
+    border-bottom: 1px solid #ccc;	
+}
+
+.fox-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fox-field input {
+    width: 60%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* 滑块（范围选择）样式 */
+input[type="range"] {
+    width: 100%;
+}
+
+#fox-field-id-value {
+    margin-left: 10px;
+}
+
+.fox-field-desc {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.warning {
+	width:100%;
+    color: #ff6600;
+	text-align:center;
+	line-height:26px;
+    font-size: 14px;
+	margin:auto;
+}
+
+.success {
+
+    color: #ff6600;
+	text-align:center;
+	line-height:26px;
+    font-size: 14px;	
+	
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* 轮播图样式 */
+.fox-gallery-wrapper{
+	
+}
+
+.fox-gallery-items{
+
+}
+
+.fox-gallery-item{
+	height:68px;
+	line-height:68px;
+	clear: both;	
+	display:flex;
+	align-items: center; /* 垂直居中 */
+	border-bottom: 1px solid #283e60;
+}
+
+.fox-gallery-item .button{
+
+	margin:0 0 0 10px;
+}
+.fox-gallery-url{
+	width:60%;
+height:30px;
+
+}
+
+/* 在 fox-framework/assets/admin.css 文件中 */
+.fox-gallery-add,
+.fox-gallery-remove,
+.fox-gallery-upload {
+    margin: 5px;
+}
+
+.fox-media-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fox-media-url {
+    margin-right: 10px;
+}
+
+.fox-media-upload {
+    white-space: nowrap;
+}
+
+.fox-sidebar ul li {
+    position: relative;
+}
+
+.fox-sidebar ul li .sub-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+.fox-sidebar ul li .sub-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.fox-sidebar ul li .sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.fox-sidebar ul li:hover .sub-menu {
+    display: block;
+}
+
+/* 选项卡样式 */
+.fox-tabs {
+    margin-top: 5px;
+}
+
+.fox-tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+.fox-tabs-nav li {
+    margin: 0 0.5rem -1px 0;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 0.25rem 0.25rem 0 0;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.fox-tabs-nav li:hover {
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+.fox-tabs-nav li.active {
+    background-color: #fff;
+    border-color: #e2e8f0 #e2e8f0 #165DFF;
+    border-bottom-width: 2px;
+    color: #165DFF;
+}
+
+.fox-tabs-nav .dashicons {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.fox-tab-content {
+    display: none;
+    padding: 1rem 0;
+}
+
+.fox-tab-content.active {
+    display: block;
+}
+
+/* 开关容器 */
+.fox-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* 增加宽度 */
+    height: 26px; /* 减小高度 */
+    vertical-align: middle; /* 使开关容器在垂直方向上居中 */
+}
+
+/* 隐藏默认的复选框 */
+.fox-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* 滑块 */
+.fox-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ed6f6f; /* 关闭状态颜色为红色 */
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px; /* 稍微有点圆角 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 添加阴影，增加立体感 */
+}
+
+/* 滑块上的圆形按钮改为长方形 */
+.fox-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px; /* 调整高度，使其垂直居中 */
+    width: 24px; /* 调整宽度 */
+    left: 2px;
+    top: 50%; /* 顶部定位到中间 */
+    transform: translateY(-50%); /* 向上移动自身高度的一半，实现垂直居中 */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 4px; /* 稍微有点圆角 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 为滑块添加阴影，增加立体感 */
+}
+
+/* 开启状态 */
+input:checked + .fox-slider {
+    background-color: #07c707; /* 开启状态颜色为绿色 */
+}
+
+/* 开启时滑块移动到右侧 */
+input:checked + .fox-slider:before {
+    -webkit-transform: translate(32px, -50%); /* 调整移动距离，并保持垂直居中 */
+    -ms-transform: translate(32px, -50%);
+    transform: translate(32px, -50%);
+}
+
+/* 显示“启用”和“禁用”文字 */
+.fox-slider:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold; /* 加粗文字 */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* 添加文字阴影，增加可读性 */
+}
+
+/* 关闭状态显示“禁用” */
+input:not(:checked) + .fox-slider:after {
+    content: "禁用";
+    right: 6px;
+    color: white;
+}
+
+/* 开启状态显示“启用” */
+input:checked + .fox-slider:after {
+    content: "启用";
+    left: 6px;
+    color: white;
+}
+
+/* 单选框组 - 竖式排列 */
+.fox-radio-group-vertical {
+    display: block;
+}
+
+/* 单选框组 - 横排排列 */
+.fox-radio-group-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 选项之间的间距 */
+}
+
+/* 复选框组 - 竖式排列 */
+.fox-checkbox-group-vertical {
+    display: block;
+}
+
+/* 复选框组 - 横排排列 */
+.fox-checkbox-group-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 选项之间的间距 */
+}
+
+.fox-radio-label,
+.fox-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px; /* 增加选项之间的间距 */
+}
+
+/* 完全隐藏原生单选框 */
+.fox-radio-label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* 自定义单选框样式 */
+.fox-radio-custom {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+/* 选中状态的样式 */
+.fox-radio-label input[type="radio"]:checked + .fox-radio-custom {
+    border-color: #004d99; /* 墨蓝色边框 */
+}
+
+.fox-radio-label input[type="radio"]:checked + .fox-radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #004d99; /* 墨蓝色实心小圆点 */
+}
+
+/* 鼠标悬停效果 */
+.fox-radio-label:hover input[type="radio"] + .fox-radio-custom {
+    border-color: #004d9980; /* 半透明墨蓝色 */
+}
+
+/* 图片单选框样式 */
+.fox-radio-image-label {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fox-radio-image-container {
+    position: relative;
+    display: block;
+    width: 120px; /* 图片容器宽度 */
+    height: 120px; /* 图片容器高度 */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.fox-radio-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fox-radio-image-check {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #004d99;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
+
+.fox-radio-label input[type="radio"]:checked + .fox-radio-image-container {
+    border-color: #004d99;
+}
+
+.fox-radio-label input[type="radio"]:checked + .fox-radio-image-container .fox-radio-image-check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fox-radio-image-label-text {
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* 图片复选框样式 */
+.fox-checkbox-image-label {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fox-checkbox-image-container {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.fox-checkbox-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fox-checkbox-image-check {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #004d99;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
+
+.fox-checkbox-label input[type="checkbox"]:checked + .fox-checkbox-image-container {
+    border-color: #004d99;
+}
+
+.fox-checkbox-label input[type="checkbox"]:checked + .fox-checkbox-image-container .fox-checkbox-image-check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fox-checkbox-image-label-text {
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* 隐藏图片复选框的原生复选框 */
+.fox-checkbox-image-label input[type="checkbox"].sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* 单选框图标样式 */
+.fox-radio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px; /* 图标大小 */
+    color: #555;
+}
+
+/* 复选框图标样式 */
+.fox-checkbox-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px; /* 图标大小 */
+    color: #555;
+}
+
+/* 选中状态的图标颜色 */
+.fox-checkbox-label input[type="checkbox"]:checked + .fox-checkbox-image-container .fox-checkbox-icon,
+.fox-radio-label input[type="radio"]:checked + .fox-radio-image-container .fox-radio-icon {
+    color: #004d99;
+}
